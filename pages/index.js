@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (<>
-    <p>This is a React NextJs Starter Template with <br /><a href="https://getbootstrap.com/docs/5.0/components/modal/" target="_blank">Bootstrap V5.2</a> used as CDN.</p>
+    <p>This is a React NextJs Starter Template with <br /><a href="https://getbootstrap.com/docs/5.0/components/modal/" rel="noreferrer" target="_blank">Bootstrap V5.2</a> used as CDN.</p>
 
 
     <div className="loginContainer">
@@ -17,11 +17,11 @@ export default function Home() {
 
           <div className="form-floating">
             <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-            <label for="floatingInput">Email address</label>
+            <label htmlFor="floatingInput">Email address</label>
           </div>
           <div className="form-floating">
             <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
-            <label for="floatingPassword">Password</label>
+            <label htmlFor="floatingPassword">Password</label>
           </div>
 
           <div className="checkbox mb-3">
@@ -40,7 +40,7 @@ export default function Home() {
         </button>
 
         {/* <!-- Modal --> */}
-        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
